@@ -9,19 +9,26 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="styleheader.css" />
   <link rel="stylesheet" href="stylemain.css" />
+  <link rel="stylesheet" href="stylefooter.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 </head>
 
 <body>
   <header>
     <nav id="nav-header">
       <div class="sub-nav">
-        <a class="logo-link" href="#"><img class="logo-jhonmaq" src="./Images/Logo.svg" class="nav-logo" alt="Logo Jhonmaq" /></a>
-        
+        <a class="logo-link" href="#"><img class="logo-jhonmaq" src="./Images/Logo.svg" class="nav-logo"
+            alt="Logo Jhonmaq" /></a>
+
         <div class="social-network">
-          <menu id="nav-menu">
+          <menu id="nav-menu" class="column">
             <li class="nav-item">
               <a href="#quem-somos" class="nav-link">Quem Somos</a>
             </li>
@@ -50,14 +57,23 @@
 
           </menu>
 
-          <a class="nav-insta" rel="noopener"
+          <a class="nav-insta" rel="noopener" type="button"
             href="https://instagram.com/metalurgica.jhonmaq?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
             <img src="./Images/instagram.png" alt="Logo Instagram" />
             Instagram</a>
 
-          <a class="nav-whats" rel="noopener" href="https://wa.me/message/3VWNEEJKERCUC1" target="_blank">
+          <a class="nav-whats" rel="noopener" type="button" href="https://wa.me/message/3VWNEEJKERCUC1" target="_blank">
             <img src="./Images/whatsapp.png" alt="Logo Whatsapp" />
             Orçamento</a>
+
+          <a class="logo-insta" rel="noopener"
+            href="https://instagram.com/metalurgica.jhonmaq?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+            <img src="./Images/instagram_header.png" alt="Logo Instagram" />
+          </a>
+
+          <a class="logo-whats" rel="noopener" href="https://wa.me/message/3VWNEEJKERCUC1" target="_blank">
+            <img src="./Images/whatsapp_header.png" alt="Logo Whatsapp" />
+          </a>
         </div>
       </div>
       <div class="menu_icons menu_closed" id="hamburguer">
@@ -76,165 +92,258 @@
       </p>
 
       <div>
-        <a class="button-servicos" href="#servicos"> Nossos Serviços</a>
+        <a class="button-servicos" type="button" href="#servicos"> Nossos Serviços</a>
 
-        <a class="whats" rel="noopener" href="https://wa.me/message/3VWNEEJKERCUC1" target="_blank">
-        <img src="./Images/whatsapp.png" alt="Logo Whatsapp" /> Orçamento</a>
+        <a class="whats" rel="noopener" type="button" href="https://wa.me/message/3VWNEEJKERCUC1" target="_blank">
+          <img src="./Images/whatsapp.png" alt="Logo Whatsapp" /> Orçamento</a>
       </div>
     </div>
   </header>
 
-  <main class="column">
-    <div id="quem-somos">
-      <div>
-        <img src="./imagens_main/container.png" alt="Imagem ilustrando quem somos" />
+  <main class="column">    
+    <div class="centralizar">
+      <div id="quem-somos" class="column">
+        <div class="centralizar">
+          <img src="./imagens_main/Container.svg" alt="Imagem ilustrando quem somos" />
+        </div>
+        <div class="column ajuste-quem-somos">
+          <h2>Quem Somos</h2>
+          <p>
+            Metalúrgica Jhonmaq, fundada em 1987 por Carlos Alberto Galeano,
+            iniciou suas atividades no fundo de uma garagem, inicialmente
+            realizando serviços de manutenção. Ao longo dos anos com a aquisição
+            de novas máquinas, passou a fabricar peças em série e execução de
+            projetos. Atualmente, atende a diversos segmentos de atividades e
+            dentre elas várias empresas de médio e grande porte confiam no nosso
+            trabalho.
+          </p>
+        </div>
       </div>
-      <div class="column">
-        <h2>Quem Somos</h2>
+
+      <div class="column" id="processos-fabricacao">
+        <h2>Nossos processos de fabricação</h2>
         <p>
-          Metalúrgica Jhonmaq, fundada em 1987 por Carlos Alberto Galeano,
-          iniciou suas atividades no fundo de uma garagem, inicialmente
-          realizando serviços de manutenção. Ao longo dos anos com a aquisição
-          de novas máquinas, passou a fabricar peças em série e execução de
-          projetos. Atualmente, atende a diversos segmentos de atividades e
-          dentre elas várias empresas de médio e grande porte confiam no nosso
-          trabalho.
+          Contamos com uma diversidade de máquinas para poder atender os mais
+          variados tipos de serviços, dentre elas, máquinas de pequeno a grande
+          porte. Para atender aos serviços mais precisos, contamos com máquinas
+          CNC e máquinas convencionais com réguas digitais em seus eixos de
+          atuação, garantindo assim precisão milesimal.
         </p>
+        <a id="saiba-mais-fabricacao1" type="button" href="#">Saiba Mais</a>
+        <a id="saiba-mais-fabricacao2" type="button" href="#">CLIQUE AQUI E CONFIRA NOSSAS MÁQUINAS E EQUIPAMENTOS</a>
       </div>
-    </div>
 
-    <div>
-      <h2>Nossos processos de fabricação</h2>
-      <p>
-        Contamos com uma diversidade de máquinas para poder atender os mais
-        variados tipos de serviços, dentre elas, máquinas de pequeno a grande
-        porte. Para atender aos serviços mais precisos, contamos com máquinas
-        CNC e máquinas convencionais com réguas digitais em seus eixos de
-        atuação, garantindo assim precisão milesimal.
-      </p>
-      <a href="#">Saiba Mais</a>
-    </div>
+      <div class="column diversidades">
+        <div class="column" id="equipamentos">
+          <div>
+            <img src="./imagens_main/equipamentos.svg" alt="Imagem ilustrando equipamentos" />
+          </div>
+          <h2>Equipamentos</h2>
+          <p>
+            As máquinas destinadas a serviços de precisão são equipadas com
+            sistema de coordenadas digitais nos eixos de deslocamento.
+          </p>
+        </div>
 
-    <div>
-      <div>
-        <img src="./imagens_main/equipamentos.png" alt="Imagem ilustrando equipamentos" />
+        <div class="column" id="qualidade">
+          <div>
+            <img src="./imagens_main/qualidade.svg" alt="Imagem ilustrando qualidade" />
+          </div>
+          <h2>Qualidade</h2>
+          <p>
+            Todos os produtos fabricados pela JHONMAQ passam por um processo de análise
+            e controle rígido de qualidade dimensional e de acabamento.
+          </p>
+        </div>
+
+        <div class="column" id="precisao">
+          <div>
+            <img src="./imagens_main/precisao.svg" alt="Imagem ilustrando precisao" />
+          </div>
+          <h2>Precisão</h2>
+          <p>
+            As máquinas equipadas com sistema de coordenadas digitais
+            e resolução de medida de 0,001mm, proporcionam alta
+            precisão nos serviços de usinagem.
+          </p>
+        </div>
       </div>
-      <h2>Equipamentos</h2>
-      <p>
-        As máquinas destinadas a serviços de precisão são equipadas com
-        sistema de coordenadas digitais nos eixos de deslocamento.
-      </p>
-    </div>
 
-    <div>
-      <div>
-        <img src="./imagens_main/qualidade.png" alt="Imagem ilustrando qualidade" />
+      <section>
+        <div class="glide carrossel">     
+          <div class="carrossel-conteudo">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">0</li>
+                <li class="glide__slide">1</li>
+                <li class="glide__slide">2</li>
+                <li class="glide__slide">3</li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                prev
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                next
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="clientes">
+        <div class="column" id="afastar-conteudos">
+          <H2 id="clientes">Clientes</H2>
+          <div id="carousel-clientes">
+            <img class="seta-esquerda" src="./imagens_main/seta_esquerda.svg" alt="Seta para esquerda ">
+
+            <div id="organizar-clientes">
+              <img class="cliente-astro" src="./imagens_main/cliente_springer.svg" alt="Imagem cliente Astro">
+              <img class="cliente-astro" src="./imagens_main/cliente_cidepe.svg" alt="Imagem cliente Astro">
+              <img class="cliente-astro" src="./imagens_main/cliente_novus.svg" alt="Imagem cliente Astro">
+              <img class="cliente-astro" src="./imagens_main/cliente_astro.svg" alt="Imagem cliente Astro">
+              <img class="cliente-astro" src="./imagens_main/cliente_viemar.svg" alt="Imagem cliente Astro">
+              <img class="cliente-astro" src="./imagens_main/cliente_inelbra.svg" alt="Imagem cliente Astro">
+              <img class="cliente-astro" src="./imagens_main/cliente_bras_rental.svg" alt="Imagem cliente Astro">
+            </div>
+
+            <img class="seta-direita" src="./imagens_main/seta_direita.svg" alt="Seta para direita">
+          </div>
+          <p class="column">            
+            Empresas que confiam na nossa qualidade metalúrgica.
+          </p>
+        </div>
       </div>
-      <h2>Qualidade</h2>
-      <p>
-        Todos os produtos fabricados pela JHONMAQ passam por um processo de análise
-        e controle rígido de qualidade dimensional e de acabamento.
-      </p>
-    </div>
 
-    <div>
-      <div>
-        <img src="./imagens_main/precisao.png" alt="Imagem ilustrando precisao" />
+      <div id="todos-servicos">
+        <div class="column" id="servicos">
+          <h2>Serviços</h2>
+          <p>
+            Soluções metalúrgicas personalizadas para impulsionar seu sucesso.
+            Resultados de qualidade, confiabilidade e eficiência em cada projeto.
+          </p>
+        </div>
+
+        <div class="column" id="servicos-metalurgica">
+          <div class="column" id="fabricacao">
+            <div>
+              <img src="./imagens_main/fabricacao.svg" alt="Imagem ilustrando fabricação" />
+            </div>
+            <h2>Fabricação</h2>
+            <p>
+              Experiência e precisão na fabricação de peças sob medida.
+              Transformamos suas ideias em produtos metalúrgicos de excelência.
+            </p>
+          </div>
+
+          <div class="column" id="manutencao">
+            <div>
+              <img src="./imagens_main/manutencao.svg" alt="Imagem ilustrando manutenção" />
+            </div>
+            <h2>Manutenção</h2>
+            <p>
+              Maximize a vida útil dos seus equipamentos com nossa expertise em manutenção.
+              Inspeções regulares, reparos e manutenção preventiva de alto nível.
+            </p>
+          </div>
+
+          <div class="column" id="projetos">
+            <div>
+              <img src="./imagens_main/projetos.svg" alt="Imagem ilustrando projetos" />
+            </div>
+            <h2>Projetos</h2>
+            <p>
+              Inovação e excelência em projetos metalúrgicos.
+              Soluções personalizadas para atender às suas demandas específicas.
+            </p>
+          </div>
+        </div>
       </div>
-      <h2>Precisão</h2>
-      <p>
-        As máquinas equipadas com sistema de coordenadas digitais
-        e resolução de medida de 0,001mm, proporcionam alta
-        precisão nos serviços de usinagem.
-      </p>
-    </div>
 
-    <div>
-      <H2 id="clientes">Clientes</H2>
-      <div>
-        <img src="./imagens_main/seta_esquerda.png" alt="Seta para esquerda ">
-        <img src="./imagens_main/cliente_astro.png" alt="Imagem cliente Astro">
-        <img src="./imagens_main/seta_direita.png" alt="Seta para direita">
+      <div class="column" id="produtos">
+        <h2 id="servicos">Produtos</h2>
+        <p>
+          Uma linha diversificada de produtos de alta qualidade e durabilidade.
+          Soluções confiáveis e inovadoras para suas necessidades industriais.
+        </p>
+
+
+        <a id="saiba-mais-produtos1" type="button" href="#">Saiba Mais</a>
+        <a id="saiba-mais-produtos2" type="button" href="#">CLIQUE AQUI E CONHEÇA NOSSO CATÁLOGO DE PRODUTOS</a>
       </div>
-      <p>
-        Clientes satisfeitos e parcerias de sucesso:
-        Empresas que confiam na nossa qualidade metalúrgica.
-      </p>
-    </div>
 
-    <div>
-      <h2 id="servicos">Serviços</h2>
-      <p>
-        Soluções metalúrgicas personalizadas para impulsionar seu sucesso.
-        Resultados de qualidade, confiabilidade e eficiência em cada projeto.
-      </p>
-    </div>
+      <div class="column" id="projetos-executados">
+        <div id="projetos-executados-imagens">
+          <img class="seta-projetos-esquerda" src="./imagens_main/seta_esquerda.svg" alt="Seta para esquerda ">
 
-    <div>
-      <div>
-        <img src="./imagens_main/fabricacao.png" alt="Imagem ilustrando fabricação" />
+          <div id="organizar-projetos">
+            <div class="column">
+              <img class="pecas-1" src="./imagens_main/projetos_executados.svg" alt="Imagem peças fabricadas">
+              <a href="#">Projetos Executados</a>
+            </div>
+
+            <div class="column ordem-item">
+              <img class="pecas-2" src="./imagens_main/pecas_seriadas.svg" alt="Imagem peças fabricadas">
+              <a href="#">Peças Seriadas</a>
+            </div>
+
+            <div class="column">
+              <img class="pecas-3" src="./imagens_main/servicos_de_manutencao.svg" alt="Imagem peças fabricadas">
+              <a href="#">Serviços de Manutenção</a>
+            </div>
+
+            <div class="column">
+              <img class="pecas-4" src="./imagens_main/nossos_produtos.svg" alt="Imagem peças fabricadas">
+              <a href="#">Nossos Produtos</a>
+            </div>
+          </div>
+
+          <img class="seta-projetos-direita" src="./imagens_main/seta_direita.svg" alt="Seta para direita">
+        </div>
       </div>
-      <h2>Fabricação</h2>
-      <p>
-        Experiência e precisão na fabricação de peças sob medida.
-        Transformamos suas ideias em produtos metalúrgicos de excelência.
-      </p>
-    </div>
-
-    <div>
-      <div>
-        <img src="./imagens_main/manutencao.png" alt="Imagem ilustrando manutenção" />
-      </div>
-      <h2>Manutenção</h2>
-      <p>
-        Maximize a vida útil dos seus equipamentos com nossa expertise em manutenção.
-        Inspeções regulares, reparos e manutenção preventiva de alto nível.
-      </p>
-    </div>
-
-    <div>
-      <div>
-        <img src="./imagens_main/projetos.png" alt="Imagem ilustrando projetos" />
-      </div>
-      <h2>Projetos</h2>
-      <p>
-        Inovação e excelência em projetos metalúrgicos.
-        Soluções personalizadas para atender às suas demandas específicas.
-      </p>
-      <a href="#">Saiba Mais</a>
-
-      <div>
-        <img src="./imagens_main/seta_esquerda.png" alt="Seta para esquerda ">
-        <img src="./imagens_main/projetos_executados.png" alt="Imagem cliente Astro">
-        <img src="./imagens_main/seta_direita.png" alt="Seta para direita">
-        <span>Projetos Executados</span>
-      </div>
-    </div>
-
-    <div>
-      <h2>Contato</h2>
-      <p>
-        Fale conosco para obter soluções metalúrgicas personalizadas.
-      </p>
-      <span>metjhonmaq@gmail.com</span>
-      <span>(51) 3476-5967</span>
-      <span>Rua Ney Britto, 68 - Nossa Sra. das Graças, Canoas / RS</span>
     </div>
   </main>
 
-  <footer>
-    <div id="mapa">
+  <footer class="column">
+    <div id="mapa" class="column">
+      <div class="column" id="contato">
+        <h2>Contato</h2>
+        <div class="column" id="contatos">
+          <p>
+            Fale conosco para obter soluções metalúrgicas personalizadas.
+          </p>
+          <address class="column">
+            <span><span><img src="./imagens_main/Email.svg"
+                  alt="Imagem ilustrando Email"></span>metjhonmaq@gmail.com</span>
+            <span><span><img src="./imagens_main/Phone.svg" alt="Imagem telefone"></span>(51) 3476-5967</span>
+            <span><span><img src="./imagens_main/localizacao.svg" alt="Imagem ilustrando localizacao"></span>Rua Ney
+              Britto, 68 -
+              Nossa Sra. das Graças, Canoas / RS</span>
+          </address>
+        </div>
+      </div>
+
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.7424737513156!2d-51.15443302445067!3d-29.92931527498178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519705ba2ce5273%3A0x64e4b5782f7e009f!2sR.%20Ney%20Brito%2C%2068%20-%20Nossa%20Sra.%20das%20Gracas%2C%20Canoas%20-%20RS%2C%2092030-210!5e0!3m2!1spt-BR!2sbr!4v1697146193083!5m2!1spt-BR!2sbr"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d864.4361072321706!2d-51.151781!3d-29.929259!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519705b9888a4f7%3A0x59fe14f14e63f9fc!2sMetal%C3%BArgica%20Jhonmaq!5e0!3m2!1spt-BR!2sbr!4v1702862679459!5m2!1spt-BR!2sbr"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div>
+    <div id="rodape">
       <p>Copyright © 2023 Metalúrgica Jhonmaq Ltda.</p>
     </div>
   </footer>
 
   <script src="index.js"></script>
+  <script>
+    import Glide, { Autoplay } from 'node_modules/@glidejs/glide/dist/glide.modular.esm'
+    new Glide(".glide").mount();
+  </script>
 </body>
 
 </html>
