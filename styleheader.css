@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url(./Images/Fundo_Header.svg), no-repeat;
+  background: url(./Images/Fundo_Header.png), no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -17,8 +17,7 @@ header {
   top: 0;
   z-index: 2;
   width: 100%;
-  padding: 24px;
-  padding-right: 40px;
+  padding: 24px 24px;
   background-color: rgba(1, 20, 32, 0.5);
 }
 
@@ -49,6 +48,14 @@ header {
 }
 
 .nav-insta {
+  display: none;
+}
+
+.logo-insta {
+  display: none;
+}
+
+.logo-whats {
   display: none;
 }
 
@@ -110,9 +117,14 @@ header {
   height: 0;
   overflow: hidden;
   left: 0;
+  gap: 24px;
+  padding-left: 24px;
   background-color: rgb(255, 255, 255);
+  max-width: 100%;
   width: 100%;
   top: 100%;
+  font-size: 18px;
+  line-height: 27px;
   text-align: left;
   transition: 0.3s ease-in-out;
 }
@@ -134,7 +146,7 @@ header {
   padding-left: 24px;
   top: 100%;
   left: 0;
-  height: 100vh;
+  height: calc(100vh - 88px);
   transition: 0.3s ease-in-out;
   overflow-y: scroll;
 }
@@ -168,13 +180,12 @@ header {
   line-height: 30px;
   font-size: 23px;
   font-weight: 700;
+  color: rgba(255, 255, 255, 1);
 }
 
 .body-header p {
-  width: 100%;
   height: 79px;
   font-size: 12px;
-  font-weight: 400;
   line-height: 15.6px;
   color: rgba(255, 255, 255, 1);
 }
@@ -182,6 +193,7 @@ header {
 .whats {
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 148px;
   width: 100%;
   height: 36px;
@@ -203,9 +215,12 @@ header {
   height: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 715px) {
+  #nav-header {
+    padding: 26px 36px;
+  }
+
   .sub-nav {
-    padding-left: 36px;
     padding-right: 13px;
   }
 
@@ -232,6 +247,7 @@ header {
   .nav-whats {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 148px;
     width: 100%;
     height: 36px;
@@ -260,23 +276,16 @@ header {
   }
 
   .body-header {
-    display: flex;
     max-width: 351px;
-    width: 100%;
     gap: 16px;
-    padding-left: 30px;
     padding-bottom: 101px;
+    padding-left: 36px;
   }
 
   .body-header h2 {
     max-width: 240px;
-    width: 100%;
     height: 63px;
     font-size: 20px;
-  }
-
-  .body-header p {
-    height: 46px;
   }
 
   .body-header div {
@@ -300,53 +309,107 @@ header {
     font-weight: 700;
     font-size: 16px;
   }
-  .button-servicos a {
-    line-height: 20px;
+}
+
+@media (max-width: 1023) {
+  header {
+    background-position-x: 20%;
   }
 }
 
 @media (min-width: 1024px) {
   #nav-header {
-    padding-right: 45px;
+    display: flex;
+    width: 100%;
+    padding: 0px;
   }
 
   .sub-nav {
     height: 60px;
-  }
-
-  .logo-jhonmaq {
-    max-width: 274px;
-    height: 60px;
+    padding: 0px;
+    align-items: center;
+    margin: 26px 36px;
   }
 
   .logo-link {
-    padding-top: 10px;
+    align-self: center;
+  }
+
+  .nav-link {
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    transition: 0.7s ease;
+    padding-top: 0px;
+  }
+
+  .logo-jhonmaq {
+    max-width: 278px;
+    height: 40px;
   }
 
   .social-network {
-    padding-right: 81px;
+    padding: 0px;
+    gap: 24px;
   }
 
-  .nav-insta {
-    max-width: 196px;
-    width: 100%;
-    height: 56px;
-    padding: 20px 40px;
+  #hamburguer {
+    display: none;
+  }
+
+  #nav-menu {
+    position: unset;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    top: 0;
+    height: unset;
+    background-color: unset;
+  }
+
+  #nav-menu.active {
+    position: unset;
+    height: unset;
+    flex-direction: row;
+    left: unset;
+    text-align: unset;
+    top: unset;
+    padding: unset;
+    padding-left: unset;
+    overflow-y: unset;
   }
 
   .nav-whats {
-    max-width: 156px;
+    display: none;
+  }
+
+  .nav-insta {
+    display: none;
+  }
+
+  .logo-insta {
+    display: flex;
+    max-width: 30px;
     width: 100%;
-    height: 56px;
-    border-radius: 30px;
-    padding: 16px 20px;
+    height: 30px;
+  }
+
+  .logo-whats {
+    display: flex;
+    max-width: 30px;
+    width: 100%;
+    height: 30px;
+  }
+
+  .nav-link:hover {
+    color: dodgerblue;
   }
 
   .body-header {
     max-width: 697px;
     padding-left: 0;
-    margin-left: 99px;
     margin-top: 200px;
+    margin-left: 36px;
+    padding-bottom: 236px;
   }
 
   .body-header h2 {
@@ -388,62 +451,43 @@ header {
   }
 }
 
-@media (min-width: 1300px) {
-  #nav-header {
-    display: flex;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .sub-nav {
-    padding: 0px;
-    margin: 26px 36px;
-  }
-
-  #hamburguer {
+@media (min-width: 1200px) {
+  .logo-insta {
     display: none;
   }
 
-  #nav-menu {
-    position: unset;
+  .logo-whats {
+    display: none;
+  }
+
+  .nav-insta {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 24px;
-    top: 0;
-    height: unset;
-    background-color: unset;
+    justify-content: center;
+    max-width: 148px;
+    width: 100%;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 60px;
+    color: rgba(239, 239, 255, 1);
+    font-weight: 600;
+    font-size: 18px;
+    gap: 8px;
+    padding: 4px 16px;
   }
 
-  #nav-menu.active {
-    position: unset;
-    height: unset;
-    flex-direction: row;
-    left: unset;
-    text-align: unset;
-    top: unset;
-    padding: unset;
-    padding-left: unset;
-    overflow-y: unset;
-  }
-
-  .nav-link {
+  .nav-whats {
     display: flex;
-    color: rgba(255, 255, 255, 1);
-    transition: 0.7s ease;
-  }
-
-  .nav-link:hover {
-    color: dodgerblue;
-  }
-
-  .social-network {
-    padding: 0px;
-  }
-
-  .body-header {
-    margin-top: 240px;
-    margin-left: 136px;
-    padding-bottom: 236px;
+    align-items: center;
+    max-width: 148px;
+    width: 100%;
+    height: 36px;
+    border: solid transparent;
+    border-radius: 18px;
+    background: rgba(46, 192, 116, 1);
+    color: rgba(239, 239, 255, 1);
+    font-weight: 700;
+    gap: 8px;
+    padding: 8px 16px;
   }
 }

@@ -18,5 +18,5 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.toggle("active");
     menuIcons.classList.toggle("menu_opened");
     menuIcons.classList.toggle("menu_closed");
-    hamburguer.classList.toggle("acive");
+    hamburguer.classList.toggle("active");
 }))
