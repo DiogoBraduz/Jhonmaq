@@ -56,17 +56,7 @@ main {
   height: 160px;
 }
 
-#equipamentos {
-  align-items: center;
-  text-align: center;
-}
-
-#qualidade {
-  align-items: center;
-  text-align: center;
-}
-
-#precisao {
+#equipamentos, #qualidade, #precisao  {
   align-items: center;
   text-align: center;
 }
@@ -92,7 +82,8 @@ main {
 
 #afastar-conteudos h2 {
   width: fit-content;
-  height: fit-content;
+  width: -moz-fit-content;
+  height: fit-content;  
   color: rgba(78, 84, 94, 1);
   margin-bottom: 45px;
 }
@@ -103,18 +94,6 @@ main {
   width: 100%;
   max-width: 517px;
   margin-top: 45px;
-}
-
-.seta-esquerda {
-  max-width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.seta-direita {
-  max-width: 50px;
-  height: 50px;
-  cursor: pointer;
 }
 
 #carousel-clientes,
@@ -152,6 +131,7 @@ main {
   width: 50px;
   height: 50px;
   border-radius: 99px;
+  background-image: none;
 }
 
 .centralizar {
@@ -198,11 +178,11 @@ main {
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-#fabricacao h2 {
+#fabricacao h2, #manutencao h2, #projetos h2 {
   padding-top: 27px;
 }
 
-#fabricacao p {
+#fabricacao p , #manutencao p, #projetos p {
   padding: 0 0 70px;
 }
 
@@ -214,28 +194,12 @@ main {
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-#manutencao h2 {
-  padding-top: 27px;
-}
-
-#manutencao p {
-  padding: 0 0 70px;
-}
-
 #projetos {
   max-width: 288px;
   align-items: center;
   padding: 0 16px;
   border-radius: 0 0 24px 24px;
   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-#projetos h2 {
-  padding-top: 27px;
-}
-
-#projetos p {
-  padding: 0 0 70px;
 }
 
 #produtos {
@@ -274,14 +238,34 @@ main {
   gap: 24px;
 }
 
-#organizar-projetos div {
-  justify-content: center;
+#projetos-executados {
+  width: 300px;
+}
+
+#projetos-executados li {  
+  display: none;
   align-items: center;
 }
 
-#projetos-executados {
+#projetos-executados li.active {
+  display: flex;
+  flex-direction: column;
+}
+
+#projetos-executados-imagens {
+  display: flex;
+  gap: 4px;
   align-items: center;
   text-align: center;
+  width: 100%;
+}
+
+#organizar-projetos {
+  display: flex;  
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #organizar-projetos img {
@@ -301,24 +285,10 @@ main {
   height: 70px;
 }
 
-#projetos-executados-imagens {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.seta-projetos-esquerda {
-  max-width: 50px;
+#projetos-executados-imagens button div{
+  width: 50px;
   height: 50px;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.seta-projetos-direita {
-  max-width: 50px;
-  height: 50px;
-  margin-bottom: 30px;
-  cursor: pointer;
+  margin-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -366,33 +336,15 @@ main {
     height: 150px;
   }
 
-  #equipamentos {
+  #equipamentos, #qualidade, #precisao {
     width: 100%;
   }
 
-  #equipamentos p {
+  #equipamentos p, #qualidade p, #precisao p  {
     width: 214px;
     padding: 0;
   }
-
-  #qualidade {
-    width: 100%;
-  }
-
-  #qualidade p {
-    width: 214px;
-    padding: 0;
-  }
-
-  #precisao {
-    width: 100%;
-  }
-
-  #precisao p {
-    width: 214px;
-    padding: 0;
-  }
-
+ 
   #organizar-clientes {
     gap: 24px;
   }
@@ -421,46 +373,39 @@ main {
     max-width: 704px;
   }
 
-  #fabricacao {
+  #fabricacao, #manutencao, #projetos {
     max-width: 388px;
     padding: 0;
   }
 
-  #fabricacao h2 {
+  #fabricacao h2, #manutencao h2, #projetos h2 {
     max-width: 308px;
   }
 
-  #fabricacao p {
-    max-width: 308px;
-    padding: 16px 0 42px;
-  }
-
-  #manutencao {
-    max-width: 388px;
-    padding: 0;
-  }
-
-  #manutencao h2 {
-    max-width: 308px;
-  }
-
-  #manutencao p {
+  #fabricacao p, #projetos p, #manutencao p {
     max-width: 308px;
     padding: 16px 0 42px;
   }
 
-  #projetos {
-    max-width: 388px;
-    padding: 0;
+  #projetos-executados {
+    width: 100%;   
   }
 
-  #projetos h2 {
-    max-width: 308px;
+  #projetos-executados li {  
+    display: flex;
+    flex-direction: column;
+    width: unset;
+    float: none;
+    margin: 0;
+    padding: 0; 
   }
 
-  #projetos p {
-    max-width: 308px;
-    padding: 16px 0 42px;
+  #projetos-executados-imagens{
+    justify-content: center;
+  }
+
+  #projetos-executados-imagens button {
+    display: none;    
   }
 
   #organizar-projetos {
@@ -507,18 +452,6 @@ main {
     padding-top: 36px;
     width: 269px;
   }
-
-  .seta-projetos-esquerda {
-    display: none;
-  }
-
-  .seta-projetos-direita {
-    display: none;
-  }
-
-  .ordem-item {
-    order: -1;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -537,17 +470,7 @@ main {
     max-width: 925px;
   }
 
-  #equipamentos p {
-    padding-top: 16px;
-    width: 240px;
-  }
-
-  #qualidade p {
-    padding-top: 16px;
-    width: 240px;
-  }
-
-  #precisao p {
+  #equipamentos p, #qualidade p, #precisao p {
     padding-top: 16px;
     width: 240px;
   }
@@ -558,11 +481,7 @@ main {
     gap: 30px;
   }
 
-  .seta-esquerda {
-    display: none;
-  }
-
-  .seta-direita {
+  .seta-esquerda, .seta-direita {
     display: none;
   }
 
@@ -647,15 +566,7 @@ main {
     margin-bottom: 148px;
   }
 
-  #equipamentos p {
-    width: 364px;
-  }
-
-  #qualidade p {
-    width: 364px;
-  }
-
-  #precisao p {
+  #equipamentos p, #qualidade p, #precisao p {
     width: 364px;
   }
 

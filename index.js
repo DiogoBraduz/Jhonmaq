@@ -15,7 +15,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     menuIcons.classList.toggle("active");
     navMenu.classList.toggle("active");
     menuIcons.classList.toggle("menu_opened");
-    menuIcons.classList.toggle("menu_closed");
-    hamburguer.classList.toggle("acive");
+    menuIcons.classList.toggle("menu_closed");    
   })
 );

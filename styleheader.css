@@ -43,19 +43,13 @@ header {
   height: 42px;
 }
 
-.nav-whats {
-  display: none;
-}
-
-.nav-insta {
-  display: none;
-}
-
-.logo-insta {
-  display: none;
-}
-
-.logo-whats {
+.nav-whats,
+.nav-insta,
+.logo-insta,
+.logo-whats,
+.button-servicos,
+.menu_icons .close_menu,
+.menu_icons.menu_opened .open_menu {
   display: none;
 }
 
@@ -99,16 +93,8 @@ header {
   transform: rotate(45deg) translate(-5px, -4px);
 }
 
-.menu_icons .close_menu {
-  display: none;
-}
-
 .menu_icons.menu_opened .close_menu {
   display: block;
-}
-
-.menu_icons.menu_opened .open_menu {
-  display: none;
 }
 
 #nav-menu {
@@ -204,10 +190,6 @@ header {
   font-weight: 700;
   gap: 8px;
   padding: 8px 16px;
-}
-
-.button-servicos {
-  display: none;
 }
 
 .whats img {
@@ -352,7 +334,7 @@ header {
     gap: 24px;
   }
 
-  #hamburguer {
+  #hamburguer, .nav-whats, .nav-insta {
     display: none;
   }
 
@@ -376,14 +358,6 @@ header {
     padding: unset;
     padding-left: unset;
     overflow-y: unset;
-  }
-
-  .nav-whats {
-    display: none;
-  }
-
-  .nav-insta {
-    display: none;
   }
 
   .logo-insta {
@@ -452,11 +426,7 @@ header {
 }
 
 @media (min-width: 1200px) {
-  .logo-insta {
-    display: none;
-  }
-
-  .logo-whats {
+  .logo-insta, .logo-whats {
     display: none;
   }
 
