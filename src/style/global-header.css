@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url(./src/imagens/Fundo_Header.png), no-repeat;
+  background: url(../imagens/Fundo_Header.png), no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   padding: 24px 24px;
   background-color: rgba(1, 20, 32, 0.5);
@@ -160,36 +160,6 @@ header {
   font-weight: 700;
 }
 
-.body-header {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  max-width: 280px;
-  width: 100%;
-  gap: 33px;
-  margin-top: 80px;
-  padding-left: 24px;
-  padding-top: 50px;
-  padding-bottom: 38px;
-}
-
-.body-header h2 {
-  max-width: 230px;
-  width: 100%;
-  height: 86px;
-  line-height: 30px;
-  font-size: 23px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-}
-
-.body-header p {
-  height: 79px;
-  font-size: 12px;
-  line-height: 15.6px;
-  color: rgba(255, 255, 255, 1);
-}
-
 .whats {
   display: flex;
   align-items: center;
@@ -273,41 +243,6 @@ header {
     align-items: center;
     gap: 16px;
     padding-right: 16px;
-  }
-
-  .body-header {
-    max-width: 351px;
-    gap: 16px;
-    padding-bottom: 101px;
-    padding-left: 36px;
-  }
-
-  .body-header h2 {
-    max-width: 240px;
-    height: 63px;
-    font-size: 20px;
-  }
-
-  .body-header div {
-    display: flex;
-    width: 327px;
-    gap: 20px;
-    margin-top: 32px;
-  }
-
-  .button-servicos {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 163px;
-    width: 100%;
-    height: 36px;
-    border: 1.5px solid rgba(255, 255, 255, 1);
-    border-radius: 60px;
-    color: rgba(239, 239, 255, 1);
-    font-weight: 700;
-    font-size: 16px;
   }
 }
 
@@ -402,44 +337,6 @@ header {
 
   .nav-link:hover {
     color: dodgerblue;
-  }
-
-  .body-header {
-    max-width: 697px;
-    padding-left: 0;
-    margin-top: 200px;
-    margin-left: 36px;
-    padding-bottom: 236px;
-  }
-
-  .body-header h2 {
-    max-width: 697px;
-    font-size: 60px;
-    line-height: 84px;
-    height: 168px;
-  }
-
-  .body-header p {
-    max-width: 697px;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  .body-header div {
-    width: 459px;
-    gap: 24px;
-  }
-
-  .button-servicos {
-    max-width: 226px;
-    width: 100%;
-    height: 67px;
-    border-radius: 60px;
-    padding: 20px 40px;
-  }
-
-  .button-servicos a {
-    line-height: 27px;
   }
 
   .whats {
