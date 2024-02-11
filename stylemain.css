@@ -1,0 +1,670 @@
+main {
+  width: 100%;
+  gap: 36px;
+  padding: 36px 0px;
+}
+
+#quem-somos {
+  width: 100%;
+  padding: 0 16px;
+}
+
+#quem-somos img {
+  width: 288px;
+}
+
+#processos-fabricacao {
+  align-items: center;
+  padding: 0 16px;
+}
+
+#processos-fabricacao h2 {
+  line-height: 45px;
+  text-align: center;
+}
+
+#processos-fabricacao p {
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+#saiba-mais-fabricacao1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 120px;
+  width: 100%;
+  height: 34px;
+  border-radius: 18px;
+  background: rgba(4, 113, 175, 1);
+  color: rgba(239, 239, 255, 1);
+  font-weight: 700;
+  padding: 8px 16px;
+}
+
+#saiba-mais-fabricacao2 {
+  display: none;
+}
+
+.diversidades {
+  padding: 0 16px;
+  gap: 36px;
+}
+
+.diversidades img {
+  max-width: 160px;
+  height: 160px;
+}
+
+#equipamentos {
+  align-items: center;
+  text-align: center;
+}
+
+#qualidade {
+  align-items: center;
+  text-align: center;
+}
+
+#precisao {
+  align-items: center;
+  text-align: center;
+}
+
+#clientes {
+  display: flex;
+  width: 100%;
+  height: 475px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(145, 194, 220, 1);
+}
+
+#afastar-conteudos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1228px;
+  padding: 0 48px;
+}
+
+#afastar-conteudos h2 {
+  width: fit-content;
+  height: fit-content;
+  color: rgba(78, 84, 94, 1);
+  margin-bottom: 45px;
+}
+
+#afastar-conteudos p {
+  color: rgba(101, 110, 125, 1);
+  padding-top: 0;
+  width: 100%;
+  max-width: 517px;
+  margin-top: 45px;
+}
+
+.seta-esquerda {
+  max-width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.seta-direita {
+  max-width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#carousel-clientes,
+#carouselClientes {
+  width: 100%;
+}
+
+#carouselClientes ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+}
+
+#carouselClientes ul li {
+  display: none;
+}
+
+#carouselClientes ul li.active {
+  display: block;
+}
+
+#carouselClientes ul li img {
+  width: 111px;
+}
+
+#carouselClientes .carousel-control-prev,
+#carouselClientes .carousel-control-next {
+  display: block;
+}
+
+#carouselClientes .carousel-control-prev .carousel-control-prev-icon,
+#carouselClientes .carousel-control-next .carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 99px;
+}
+
+.centralizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+#todos-servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+#servicos-metalurgica {
+  align-items: center;
+  gap: 25px;
+}
+
+#todos-servicos img {
+  max-width: 288px;
+  height: 403px;
+  padding: 0px;
+}
+
+#servicos {
+  text-align: center;
+  padding: 0 16px;
+  line-height: 54px;
+  font-size: 36px;
+}
+
+#servicos p {
+  max-width: 287px;
+  padding-top: 16px;
+}
+
+#fabricacao {
+  max-width: 288px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#fabricacao h2 {
+  padding-top: 27px;
+}
+
+#fabricacao p {
+  padding: 0 0 70px;
+}
+
+#manutencao {
+  max-width: 288px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#manutencao h2 {
+  padding-top: 27px;
+}
+
+#manutencao p {
+  padding: 0 0 70px;
+}
+
+#projetos {
+  max-width: 288px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#projetos h2 {
+  padding-top: 27px;
+}
+
+#projetos p {
+  padding: 0 0 70px;
+}
+
+#produtos {
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+#produtos p {
+  padding: 0px;
+}
+
+#saiba-mais-produtos1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 120px;
+  width: 100%;
+  height: 34px;
+  border-radius: 18px;
+  background: rgba(4, 113, 175, 1);
+  color: rgba(239, 239, 255, 1);
+  font-weight: 700;
+  padding: 8px 16px;
+}
+
+#saiba-mais-produtos2 {
+  display: none;
+}
+
+#organizar-projetos {
+  display: flex;
+  width: 190px;
+  height: 280px;
+  overflow: hidden;
+  gap: 24px;
+}
+
+#organizar-projetos div {
+  justify-content: center;
+  align-items: center;
+}
+
+#projetos-executados {
+  align-items: center;
+  text-align: center;
+}
+
+#organizar-projetos img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 16px;
+}
+
+#organizar-projetos a {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: rgba(142, 152, 154, 1);
+  width: 190px;
+  height: 70px;
+}
+
+#projetos-executados-imagens {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.seta-projetos-esquerda {
+  max-width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.seta-projetos-direita {
+  max-width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  #quem-somos {
+    max-width: 552px;
+    align-items: center;
+  }
+
+  #quem-somos img {
+    width: 400px;
+    height: 400px;
+  }
+
+  #quem-somos h2 {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+  }
+
+  #quem-somos p {
+    height: 400px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #processos-fabricacao p {
+    max-width: 704px;
+  }
+
+  #saiba-mais-fabricacao1 {
+    display: none;
+  }
+
+  .diversidades {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 696px;
+    width: 100%;
+    gap: 27px;
+    padding: 0;
+  }
+
+  .diversidades img {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  #equipamentos {
+    width: 100%;
+  }
+
+  #equipamentos p {
+    width: 214px;
+    padding: 0;
+  }
+
+  #qualidade {
+    width: 100%;
+  }
+
+  #qualidade p {
+    width: 214px;
+    padding: 0;
+  }
+
+  #precisao {
+    width: 100%;
+  }
+
+  #precisao p {
+    width: 214px;
+    padding: 0;
+  }
+
+  #organizar-clientes {
+    gap: 24px;
+  }
+
+  #saiba-mais-fabricacao2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 595px;
+    width: 100%;
+    height: 59px;
+    border-radius: 60px;
+    background: rgba(4, 113, 175, 1);
+    color: rgba(239, 239, 255, 1);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  #todos-servicos img {
+    max-width: 388px;
+    height: 388px;
+  }
+
+  #servicos p {
+    max-width: 704px;
+  }
+
+  #fabricacao {
+    max-width: 388px;
+    padding: 0;
+  }
+
+  #fabricacao h2 {
+    max-width: 308px;
+  }
+
+  #fabricacao p {
+    max-width: 308px;
+    padding: 16px 0 42px;
+  }
+
+  #manutencao {
+    max-width: 388px;
+    padding: 0;
+  }
+
+  #manutencao h2 {
+    max-width: 308px;
+  }
+
+  #manutencao p {
+    max-width: 308px;
+    padding: 16px 0 42px;
+  }
+
+  #projetos {
+    max-width: 388px;
+    padding: 0;
+  }
+
+  #projetos h2 {
+    max-width: 308px;
+  }
+
+  #projetos p {
+    max-width: 308px;
+    padding: 16px 0 42px;
+  }
+
+  #organizar-projetos {
+    flex-wrap: wrap;
+    width: 618px;
+    height: 731px;
+    gap: 80px;
+    overflow: unset;
+  }
+
+  #organizar-projetos img {
+    width: 240px;
+    height: 240px;
+  }
+
+  #produtos h2 {
+    padding: 12px 16px;
+  }
+
+  #saiba-mais-produtos1 {
+    display: none;
+  }
+
+  #saiba-mais-produtos2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 595px;
+    width: 100%;
+    height: 59px;
+    border-radius: 60px;
+    background: rgba(4, 113, 175, 1);
+    color: rgba(239, 239, 255, 1);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  #projetos-executados a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgba(142, 152, 154, 1);
+    padding-top: 36px;
+    width: 269px;
+  }
+
+  .seta-projetos-esquerda {
+    display: none;
+  }
+
+  .seta-projetos-direita {
+    display: none;
+  }
+
+  .ordem-item {
+    order: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  #quem-somos {
+    flex-direction: row;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  #quem-somos h2 {
+    width: 382px;
+    text-align: left;
+  }
+
+  #processos-fabricacao p {
+    max-width: 925px;
+  }
+
+  #equipamentos p {
+    padding-top: 16px;
+    width: 240px;
+  }
+
+  #qualidade p {
+    padding-top: 16px;
+    width: 240px;
+  }
+
+  #precisao p {
+    padding-top: 16px;
+    width: 240px;
+  }
+
+  .diversidades {
+    max-width: 796px;
+    margin: 31px 0 150px;
+    gap: 30px;
+  }
+
+  .seta-esquerda {
+    display: none;
+  }
+
+  .seta-direita {
+    display: none;
+  }
+
+  #organizar-clientes {
+    overflow: unset;
+    width: 928px;
+    justify-content: center;
+  }
+
+  #servicos p {
+    max-width: 505px;
+  }
+
+  #produtos p {
+    max-width: 614px;
+  }
+
+  #carouselClientes ul {
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  #carouselClientes ul li {
+    display: flex;
+    width: 111px;
+  }
+
+  #carouselClientes .carousel-control-prev,
+  #carouselClientes .carousel-control-next {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  #quem-somos {
+    gap: 100px;
+  }
+
+  #quem-somos img {
+    width: 556px;
+    height: 500px;
+  }
+
+  .ajuste-quem-somos {
+    align-self: flex-start;
+    padding-top: 36px;
+  }
+
+  .ajuste-quem-somos p {
+    width: 562px;
+  }
+
+  #processos-fabricacao p {
+    max-width: 1079px;
+  }
+
+  .diversidades {
+    max-width: 1220px;
+    margin: 51px 0 150px;
+    gap: 64px;
+  }
+
+  #organizar-clientes {
+    gap: 32px;
+  }
+
+  #todos-servicos {
+    gap: 55px;
+  }
+
+  #servicos {
+    align-items: center;
+  }
+
+  #servicos p {
+    max-width: 613px;
+  }
+
+  #servicos-metalurgica {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 148px;
+  }
+
+  #equipamentos p {
+    width: 364px;
+  }
+
+  #qualidade p {
+    width: 364px;
+  }
+
+  #precisao p {
+    width: 364px;
+  }
+
+  #organizar-projetos {
+    width: 1259px;
+    height: 314px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 90px;
+    margin: 108px 0 223px;
+  }
+}
