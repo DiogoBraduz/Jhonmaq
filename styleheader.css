@@ -2,12 +2,16 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url(./Images/Fundo_Header.png), no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  color: rgb(255, 255, 255, 1);
+  background-position-x: 20%;
+  background-size: 120%;
+  background: linear-gradient(
+      rgba(1, 20, 32, 0.4),
+      rgba(1, 20, 32, 0.5),
+      rgba(1, 20, 32, 0.7),
+      rgba(1, 20, 32, 0.1)
+    ),
+    url(./src/imagens/Fundo_Header.svg) no-repeat;
+  color: rgb(255, 255, 255, -9);
 }
 
 #nav-header {
@@ -334,7 +338,9 @@ header {
     gap: 24px;
   }
 
-  #hamburguer, .nav-whats, .nav-insta {
+  #hamburguer,
+  .nav-whats,
+  .nav-insta {
     display: none;
   }
 
@@ -426,7 +432,8 @@ header {
 }
 
 @media (min-width: 1200px) {
-  .logo-insta, .logo-whats {
+  .logo-insta,
+  .logo-whats {
     display: none;
   }
 

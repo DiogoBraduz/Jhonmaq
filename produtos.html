@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/imagens/logo_head1.png" />
+    <title>METALÚRGICA JHONMAQ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style/global.css" />
+    <link rel="stylesheet" href="./src/style/global-header.css" />
+    <link rel="stylesheet" href="./src/style/global-footer.css" />
+    <link rel="stylesheet" href="./src/style/produtos.css" />
+    <script src="./src/scripts/utils.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-header">
+        <div class="sub-nav">
+          <a class="logo-link" href="#"
+            ><img
+              class="logo-jhonmaq"
+              src="./src/imagens/Logo.png"
+              class="nav-logo"
+              alt="Logo Jhonmaq"
+          /></a>
+
+          <div class="social-network">
+            <menu id="nav-menu" class="column">
+              <li class="nav-item">
+                <a href="index.html#quem-somos" class="nav-link">Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#clientes" class="nav-link">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#servicos" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#produtos" class="nav-link">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html#contato" class="nav-link">Contato</a>
+              </li>
+
+              <li class="nav-item nav-social">
+                <a
+                  class="nav-link"
+                  rel="noopener"
+                  href="https://instagram.com/metalurgica.jhonmaq?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="nav-item nav-social">
+                <a
+                  class="nav-link"
+                  rel="noopener"
+                  href="https://wa.me/message/3VWNEEJKERCUC1"
+                  target="_blank"
+                  >Orçamento</a
+                >
+              </li>
+            </menu>
+
+            <a
+              class="nav-insta"
+              rel="noopener"
+              type="button"
+              href="https://instagram.com/metalurgica.jhonmaq?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              target="_blank"
+            >
+              <img src="./src/imagens/instagram.png" alt="Logo Instagram" />
+              Instagram</a
+            >
+
+            <a
+              class="nav-whats"
+              rel="noopener"
+              type="button"
+              href="https://wa.me/message/3VWNEEJKERCUC1"
+              target="_blank"
+            >
+              <img src="./src/imagens/whatsapp.png" alt="Logo Whatsapp" />
+              Orçamento</a
+            >
+
+            <a
+              class="logo-insta"
+              rel="noopener"
+              href="https://instagram.com/metalurgica.jhonmaq?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              target="_blank"
+            >
+              <img
+                src="./src/imagens/instagram_header.png"
+                alt="Logo Instagram"
+              />
+            </a>
+
+            <a
+              class="logo-whats"
+              rel="noopener"
+              href="https://wa.me/message/3VWNEEJKERCUC1"
+              target="_blank"
+            >
+              <img
+                src="./src/imagens/whatsapp_header.png"
+                alt="Logo Whatsapp"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="menu_icons menu_closed" id="hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <section id="carousel-clientes">
+        <div id="carouselProdutos" class="carousel slide">
+          <ul class="carousel-indicators">
+            <li>
+              <button
+                type="button"
+                data-bs-target="#carouselProdutos"
+                data-bs-slide-to="0"
+                class="active"
+              >
+                <span class="esconder-no-mobile">Peças</span>
+                <span>Seriadas</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                data-bs-target="#carouselProdutos"
+                data-bs-slide-to="1"
+              >
+                <span class="esconder-no-mobile">Serviços de</span>
+                <span>Manutenção</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                data-bs-target="#carouselProdutos"
+                data-bs-slide-to="2"
+              >
+                <span class="esconder-no-mobile">Projetos</span>
+                <span>Executados</span>
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                data-bs-target="#carouselProdutos"
+                data-bs-slide-to="3"
+              >
+                <span class="esconder-no-mobile">Nossos</span>
+                <span>Produtos</span>
+              </button>
+            </li>
+          </ul>
+          <div id="carouselProdutosConteudo" style="position: relative">
+            <ul class="carousel-inner">
+              <li class="carousel-item active">
+                <div class="carousel-item-container">
+                  <div class="carousel-item-conteudo">
+                    <div class="imagem-container">
+                      <img
+                        src="./src/imagens/nossos_produtos.svg"
+                        alt="Imagem do projeto"
+                      />
+                    </div>
+                    <div class="descricao-container">
+                      <h3>Projeto</h3>
+                      <p>
+                        Neste projeto desenvolvemos diversas peças Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Maxime
+                        itaque aspernatur et non sequi impedit exercitationem
+                        nobis a numquam accusamus, commodi consectetur
+                        repellendus aliquid deserunt in debitis! Distinctio,
+                        debitis incidunt?
+                      </p>
+                      <p>Máquinas utilizadas: maquina1, maquina2 e maquina3</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <div class="carousel-item-container">
+                  <div class="carousel-item-conteudo">
+                    <div class="imagem-container">
+                      <img
+                        src="./src/imagens/nossos_produtos.svg"
+                        alt="Imagem do projeto"
+                      />
+                    </div>
+                    <div class="descricao-container">
+                      <h3>Projeto</h3>
+                      <p>
+                        Neste projeto desenvolvemos diversas peças Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Maxime
+                        itaque aspernatur et non sequi impedit exercitationem
+                        nobis a numquam accusamus, commodi consectetur
+                        repellendus aliquid deserunt in debitis! Distinctio,
+                        debitis incidunt?
+                      </p>
+                      <p>Máquinas utilizadas: maquina1, maquina2 e maquina3</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <div class="carousel-item-container">
+                  <div class="carousel-item-conteudo">
+                    <div class="imagem-container">
+                      <img
+                        src="./src/imagens/nossos_produtos.svg"
+                        alt="Imagem do projeto"
+                      />
+                    </div>
+                    <div class="descricao-container">
+                      <h3>Projeto</h3>
+                      <p>
+                        Neste projeto desenvolvemos diversas peças Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Maxime
+                        itaque aspernatur et non sequi impedit exercitationem
+                        nobis a numquam accusamus, commodi consectetur
+                        repellendus aliquid deserunt in debitis! Distinctio,
+                        debitis incidunt?
+                      </p>
+                      <p>Máquinas utilizadas: maquina1, maquina2 e maquina3</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="carousel-item">
+                <div class="carousel-item-container">
+                  <div class="carousel-item-conteudo">
+                    <div class="imagem-container">
+                      <img
+                        src="./src/imagens/nossos_produtos.svg"
+                        alt="Imagem do projeto"
+                      />
+                    </div>
+                    <div class="descricao-container">
+                      <h3>Projeto</h3>
+                      <p>
+                        Neste projeto desenvolvemos diversas peças Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Maxime
+                        itaque aspernatur et non sequi impedit exercitationem
+                        nobis a numquam accusamus, commodi consectetur
+                        repellendus aliquid deserunt in debitis! Distinctio,
+                        debitis incidunt?
+                      </p>
+                      <p>Máquinas utilizadas: maquina1, maquina2 e maquina3</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselProdutos"
+              data-bs-slide="prev"
+            >
+              <div class="carousel-control-prev-icon" aria-hidden="true">
+                <img
+                  src="./src/imagens/seta_esquerda.png"
+                  alt="Seta para esquerda "
+                />
+              </div>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselProdutos"
+              data-bs-slide="next"
+            >
+              <div class="carousel-control-next-icon" aria-hidden="true">
+                <img
+                  src="./src/imagens/seta_direita.png"
+                  alt="Seta para esquerda "
+                />
+              </div>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="secao-maquinas">
+        <h2>Nossas Máquinas</h2>
+        <ul class="lista-maquinas">
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/fresadora_cnc.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Fresadora CNC</h3>
+              <ul>
+                <li>Curso máximo (850x400x580)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img
+                src="./src/imagens/maquinas/fresadora_universal.svg"
+                alt=""
+              />
+            </div>
+            <div class="descricao">
+              <h3>Fresadora Universal</h3>
+              <ul>
+                <li>Curso máximo (700x400x750)</li>
+                <li>Fresar Curso máximo (400x300x300)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/fresadora_portal.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Fresadora Portal</h3>
+              <ul>
+                <li>Curso máximo (1mt90 x 1mt x 50)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img
+                src="./src/imagens/maquinas/fresadoras_ferramenteiras .svg"
+                alt=""
+              />
+            </div>
+            <div class="descricao">
+              <h3>Fresadoras Ferramenteiras</h3>
+              <ul>
+                <li>Curso máximo (580x360x580)</li>
+                <li>Curso máximo (440x280x625)</li>
+                <li>Curso máximo (850x350x400)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img
+                src="./src/imagens/maquinas/eletroerosao_processo_de_penetracao.svg"
+                alt=""
+              />
+            </div>
+            <div class="descricao">
+              <h3>Eletroerosão - Processo de Penetração</h3>
+              <ul>
+                <li>Curso máximo (450x300x300)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/plaina.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Plaina</h3>
+              <ul>
+                <li>Curso máximo (500x350x350)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/prensa_hidráulica.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Prensa Hidráulica</h3>
+              <ul>
+                <li>Capacidade máxima de 30T</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img
+                src="./src/imagens/maquinas/eletroerosao_processo_de_penetracao.svg"
+                alt=""
+              />
+            </div>
+            <div class="descricao">
+              <h3>Prensa Excêntrica</h3>
+              <ul>
+                <li>Capacidade máxima 14T</li>
+                <li>Capacidade máxima 1T</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/torno_cnc.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Torno CNC</h3>
+              <ul>
+                <li>
+                  Distância entre placa/ponto (850mm) - Ø torneável (440mm)
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/torno_automatico.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Torno Automático</h3>
+              <ul>
+                <li>
+                  2 tornos automáticos -Capacidade (até Ø1" de passagem pelo
+                  eixo árvore) - Itan
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/solda.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Torno Revolver</h3>
+              <ul>
+                <li>Elétrica</li>
+                <li>MIG</li>
+                <li>TIG</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/durometro.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Durômetro</h3>
+              <ul>
+                <li>Curso máximo (Ø100)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/guilhotina.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Guilhotina</h3>
+              <ul>
+                <li>Capacidade (chapas de aço até 1.5mm)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/impressora_3d.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Impressora 3D</h3>
+              <ul>
+                <li>Curso máximo (440x440x465)</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img
+                src="./src/imagens/maquinas/furadeira_de_coluna.svg"
+                alt=""
+              />
+            </div>
+            <div class="descricao">
+              <h3>Máquinas Portateis</h3>
+              <ul>
+                <li>
+                  1 - Furadeira de coluna - Capacidade (brocas Ømáximo 3")
+                </li>
+                <li>1 - Serra fita - Ronemak 400</li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-maquina">
+            <div class="imagem-maquina-container">
+              <img src="./src/imagens/maquinas/torno_mecanico.svg" alt="" />
+            </div>
+            <div class="descricao">
+              <h3>Torno Mecânico</h3>
+              <ul>
+                <li>
+                  Distância entre placa e ponto (500mm) - Ø torneável (400mm) -
+                  Imor P 400 2
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div id="rodape">
+        <p>Copyright © 2023 Metalúrgica Jhonmaq Ltda.</p>
+      </div>
+    </footer>
+    <script src="./src/scripts/produtos.js"></script>
+    <script src="./src/scripts/header-scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
